@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VehiculoController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/vehiculos');
 
 Route::resource('vehiculos', VehiculoController::class);
